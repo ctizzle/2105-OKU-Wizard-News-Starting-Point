@@ -31,7 +31,7 @@ app.use(function (err, req, res, next) {
   res.send("Page not found!");
 })
 
-const PORT = 1337;
+const { PORT = 1337 } = process.env;
 
 app.listen(PORT, () => {
   console.log(`App listening in port ${PORT}`);
